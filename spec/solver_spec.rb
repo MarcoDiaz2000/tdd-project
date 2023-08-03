@@ -16,7 +16,7 @@ RSpec.describe Solver do
 
   describe "factorial" do
     it "return 120 when given 5" do
-      solver = solver.new
+      solver = Solver.new
       expect(solver.factorial(5)).to eq(120)
     end
   end

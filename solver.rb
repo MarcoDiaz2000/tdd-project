@@ -14,6 +14,9 @@ class Solver
       calculate(factorialNumber , factorialResult , constantOutPut)
     end
 
+    if realNumber == 0
+      return 1
+    end
     return calculate(realNumber , 1 , realNumber)
   end
 end

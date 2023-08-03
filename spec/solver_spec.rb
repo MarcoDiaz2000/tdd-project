@@ -24,5 +24,10 @@ RSpec.describe Solver do
       solver = Solver.new
       expect(solver.factorial(0)).to eq(1)
     end
+
+    it "should raise an exception" do
+      solver = Solver.new
+      expect(solver.factorial(-23)).to raise_error(ArgumentError)
+    end
   end
 end

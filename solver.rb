@@ -18,4 +18,16 @@ class Solver
 
     calculate(real_number, 1, real_number)
   end
+
+  def fizzbuzz(integer)
+    if (integer % 15).zero?
+      'fizzbuzz'
+    elsif (integer % 3).zero?
+      'fizz'
+    elsif (integer % 5).zero?
+      'buzz'
+    else
+      integer.to_s
+    end
+  end
 end

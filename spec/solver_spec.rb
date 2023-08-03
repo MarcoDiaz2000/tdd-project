@@ -1,8 +1,7 @@
 require './solver'
 
 RSpec.describe Solver do
-  describe "#reverse" do
-
+  describe '#reverse' do
     it "return 'olleh' when given 'hello'" do
       solver = Solver.new
       expect(solver.reverse('hello')).to eq('olleh')
@@ -14,20 +13,20 @@ RSpec.describe Solver do
     end
   end
 
-  describe "factorial" do
-    it "return 120 when given 5" do
+  describe 'factorial' do
+    it 'return 120 when given 5' do
       solver = Solver.new
       expect(solver.factorial(5)).to eq(120)
     end
 
-    it "return 1 when given 0" do
+    it 'return 1 when given 0' do
       solver = Solver.new
       expect(solver.factorial(0)).to eq(1)
     end
 
-    it "should raise an exception" do
+    it 'should raise an exception' do
       solver = Solver.new
-      expect {solver.factorial(-23)}.to raise_error(RuntimeError)
+      expect { solver.factorial(-23) }.to raise_error(RuntimeError)
     end
   end
 end

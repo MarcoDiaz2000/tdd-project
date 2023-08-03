@@ -17,6 +17,11 @@ class Solver
     if realNumber == 0
       return 1
     end
+
+    if realNumber < 0
+      return raise RuntimeError, "Invalid number"
+    end
+
     return calculate(realNumber , 1 , realNumber)
   end
 end

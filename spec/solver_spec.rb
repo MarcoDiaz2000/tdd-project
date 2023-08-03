@@ -27,7 +27,7 @@ RSpec.describe Solver do
 
     it "should raise an exception" do
       solver = Solver.new
-      expect(solver.factorial(-23)).to raise_error(ArgumentError)
+      expect {solver.factorial(-23)}.to raise_error(RuntimeError)
     end
   end
 end
